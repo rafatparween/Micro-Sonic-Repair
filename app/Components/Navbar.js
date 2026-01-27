@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,54 +11,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-100 fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-[87%] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-black">
-             123printsetupandhelp
-            </Link>
-          </div>
+    <nav className="fixed top-1 left-0 right-0 z-50">
+  <div className="max-w-[87%] mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* FIXED HEIGHT NAV */}
+    <div className="h-[80px] flex items-center justify-between">
+      
+      <Link href="/" className="flex items-center h-full">
+        <Image
+          src="/bhplogo.png"
+          alt="123 Print Setup and Help"
+          width={65}
+          height={65}
+          className="cursor-pointer object-contain"
+        />
+      </Link>
 
-          {/* Desktop Menu */}
-          {/* <div className="hidden lg:flex lg:items-center lg:space-x-8">
-            <Link
-              href="/"
-              className="text-gray-900 hover:text-[#1C8DCEED] px-3 py-2 rounded-md text-xl font-medium hover:border border-[#1C8DCEED]"
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="hover:border border-[#1C8DCEED] text-gray-900 hover:text-[#1C8DCEED] px-3 py-2 rounded-md text-xl font-medium"
-            >
-              About
-            </Link>
-            <Link
-              href="/service"
-              className="hover:border border-[#1C8DCEED] text-gray-900 hover:text-[#1C8DCEED] px-3 py-2 rounded-md text-xl font-medium"
-            >
-              Service
-            </Link>
-            <Link
-              href="/product"
-              className="hover:border border-[#1C8DCEED] text-gray-900 hover:text-[#1C8DCEED] px-3 py-2 rounded-md text-xl font-medium"
-            >
-              Product
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:border border-[#1C8DCEED] text-gray-900 hover:text-[#1C8DCEED] px-3 py-2 rounded-md text-xl font-medium"
-            >
-              Contact
-            </Link>
-            <Link
-              href="/membership"
-              className="hover:border border-[#1C8DCEED] text-gray-900 hover:text-[#1C8DCEED] px-3 py-2 rounded-md text-xl font-medium"
-            >
-              Membership
-            </Link>
-          </div> */}
+          
 
           {/* Mobile menu button */}
           <div className="flex items-center lg:hidden">
