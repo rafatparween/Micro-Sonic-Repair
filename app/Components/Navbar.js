@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-1 left-0 right-0 z-50">
+    <nav className=" left-0 right-0 z-50">
   <div className="max-w-[87%] mx-auto px-4 sm:px-6 lg:px-8">
     
     {/* FIXED HEIGHT NAV */}

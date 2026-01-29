@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <div className="mt-[85px]">
+     
     <Header/>
-  </div>
+  
   <SliderPage/>
   <PrinterSetupSection/>
 

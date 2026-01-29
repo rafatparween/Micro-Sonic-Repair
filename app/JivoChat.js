@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const JivoChat = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "code.jivosite.com/widget/kd9uAKn19v"; // your widget ID
+    script.src = "//code.jivosite.com/widget/kd9uAKn19v"; // your widget ID
     script.async = true;
     document.body.appendChild(script);
 
