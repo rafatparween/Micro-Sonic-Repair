@@ -19,10 +19,10 @@ const Navbar = () => {
       
       <Link href="/" className="flex items-center h-full">
         <Image
-          src="/bhplogo.png"
+          src="/hprlogo.png"
           alt="123 Print Setup and Help"
-          width={65}
-          height={65}
+          width={70}
+          height={70}
           className="cursor-pointer object-contain"
         />
       </Link>

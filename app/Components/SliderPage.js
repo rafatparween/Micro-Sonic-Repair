@@ -149,20 +149,23 @@
 // }
 
 
+
+
+
 import Image from "next/image";
 
-export default function SuppoertSection() {
+export default function SupportSection() {
   return (
     <>
-      <section className="w-full bg-white flex justify-center mt-[60px]">
+      <section className="w-full bg-black flex justify-center mt-[40px]">
         <div className="relative flex flex-col md:flex-row w-full max-w-[1330px] min-h-[300px] md:h-60 items-center px-5 md:px-10 py-6 md:py-0 overflow-hidden">
 
           {/* Left Text */}
           <div className="flex-1 z-10 max-w-[650px] text-center md:text-left">
-            <h1 className="text-[22px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-black leading-snug">
+            <h1 className="text-[22px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-white leading-snug">
               We're here to help you set up your printer
             </h1>
-            <p className="text-sm sm:text-base text-gray-600 mt-3 leading-relaxed max-w-[91%] mx-auto md:mx-0">
+            <p className="text-sm sm:text-base text-gray-300 mt-3 leading-relaxed max-w-[91%] mx-auto md:mx-0">
               Connect your printer to Wi-Fi, a wired network, or your computer in just a few steps.
             </p>
           </div>
@@ -182,7 +185,7 @@ export default function SuppoertSection() {
         </div>
       </section>
 
-      {/* <hr className="border-t border-[#ddd]" /> */}
+      <hr className="border-t border-[var(--color-blue-500)]" />
     </>
   );
 }
