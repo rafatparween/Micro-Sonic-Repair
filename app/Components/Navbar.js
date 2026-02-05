@@ -12,17 +12,17 @@ const Navbar = () => {
 
   return (
     <nav className=" left-0 right-0 z-50">
-  <div className="max-w-[87%] mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-[91%] mx-auto px-4 sm:px-6 lg:px-8">
     
     {/* FIXED HEIGHT NAV */}
-    <div className="h-[80px] flex items-center justify-between">
+    <div className="h-[90px] flex items-center justify-between">
       
       <Link href="/" className="flex items-center h-full">
         <Image
-          src="/hprlogo.png"
-          alt="123 Print Setup and Help"
-          width={70}
-          height={70}
+          src="/logohpnew.png"
+          alt="print hp logo"
+          width={130}
+          height={130}
           className="cursor-pointer object-contain"
         />
       </Link>
