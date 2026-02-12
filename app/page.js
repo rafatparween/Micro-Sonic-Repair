@@ -9,6 +9,9 @@ import Footer from "./Components/Footer";
 import PrinterSetupGuide from "./Components/PrinterSetupGuide";
 import PrinterSetupSection from "./Components/PrinterSetupSection";
 import JivoChat from "./JivoChat";
+import PrinterHelp from "./Components/PrinterHelp";
+import HpExactSection from "./Components/HpExactSection";
+
 
 
 export default function Home() {
@@ -20,6 +23,8 @@ export default function Home() {
   
   <SliderPage/>
   <PrinterSetupSection/>
+  <PrinterHelp/>
+  <HpExactSection/>
 
   <Digonode/>
   <PrinterSetupGuide/>
